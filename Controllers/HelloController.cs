@@ -15,7 +15,7 @@ namespace hello.Controllers
         [HttpGet]
         public async Task< IEnumerable<string>> Get()
         {
-          var hello = await  client.GetProductAsync("api/niko/hello"); 
+          var hello = await  client.GetProductAsync("https://helloworld.sloppy.zone/api/niko/hello"); 
           return new string[] { "Hello Niko Memanggil service",hello};
         }
 
